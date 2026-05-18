@@ -27,33 +27,39 @@ const materials = [
 export function HomeSections() {
   return (
     <>
-      <section className="relative min-h-screen overflow-hidden bg-[#0d0d0d]">
-        <motion.div initial={{ scale: 1.12, y: 8 }} animate={{ scale: 1.03, y: 0 }} transition={{ duration: 3.8, ease: [0.16, 1, 0.3, 1] }} className="editorial-grain absolute inset-0">
-          <Image src="/images/hero.jpg" alt="Monochrome campaign portrait" fill className="object-cover object-[58%_center] grayscale blur-[0.6px]" priority />
+      <section className="relative min-h-screen overflow-hidden bg-[#090909]">
+        <motion.div
+          initial={{ scale: 1.14, x: 12 }}
+          animate={{ scale: 1.04, x: 0 }}
+          transition={{ duration: 4.8, ease: [0.16, 1, 0.3, 1] }}
+          className="editorial-grain absolute inset-0"
+        >
+          <Image src="/images/hero.jpg" alt="Monochrome campaign portrait" fill className="object-cover object-[66%_center] grayscale blur-[1.2px]" priority />
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/80" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.1)_35%,rgba(0,0,0,0.6)_100%)]" />
-        <div className="absolute inset-0 opacity-30 [background:radial-gradient(circle_at_18%_24%,rgba(255,255,255,0.16),transparent_42%),radial-gradient(circle_at_78%_74%,rgba(255,255,255,0.09),transparent_34%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(104deg,rgba(0,0,0,0.92)_12%,rgba(0,0,0,0.62)_44%,rgba(0,0,0,0.86)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5)_0%,rgba(0,0,0,0.2)_40%,rgba(0,0,0,0.78)_100%)]" />
+        <div className="absolute inset-0 opacity-20 [background:radial-gradient(circle_at_22%_18%,rgba(255,255,255,0.12),transparent_38%)]" />
+        <div className="absolute inset-y-0 left-[58%] hidden w-px bg-[#f2f1ec]/20 md:block" />
 
-        <div className="relative z-10 grid min-h-screen grid-cols-6 px-6 pb-12 pt-20 md:px-14 md:pb-16 lg:px-24">
-          <MotionReveal className="col-span-6 self-start pt-8 md:col-span-4 md:col-start-1 md:pt-14 lg:col-span-3 lg:col-start-2">
-            <p className="mb-8 text-[10px] uppercase tracking-[0.28em] text-[#e4e3df]/70">JULL / 2026 COLLECTION</p>
-            <h1 className="font-[var(--font-cormorant)] text-[3.6rem] leading-[0.9] tracking-[0.04em] text-[#ecebe7] md:text-[5.5rem] lg:text-[7.25rem]">
+        <div className="relative z-10 grid min-h-screen grid-cols-12 px-6 pb-12 pt-20 md:px-14 md:pb-16 lg:px-24">
+          <MotionReveal className="col-span-8 col-start-1 self-start pt-10 md:col-span-5 md:pt-16">
+            <p className="mb-8 text-[9px] uppercase tracking-[0.35em] text-[#e3e1dc]/60">JULL STUDIO / EDITION 01</p>
+            <h1 className="font-[var(--font-cormorant)] text-[3.2rem] leading-[0.86] tracking-[0.045em] text-[#eceae5] md:text-[5.1rem] lg:text-[6.9rem]">
               JULL
               <br />
               STUDIO
             </h1>
           </MotionReveal>
 
-          <MotionReveal delay={0.2} className="col-span-5 col-start-2 mt-12 self-end md:col-span-2 md:col-start-5 md:mb-24 md:mt-0 lg:col-span-2">
-            <p className="max-w-[18rem] text-[11px] uppercase leading-relaxed tracking-[0.24em] text-[#d1d0cc]">
+          <MotionReveal delay={0.25} className="col-span-5 col-start-8 mt-24 self-end pb-3 md:col-span-3 md:col-start-9 md:mb-24 md:mt-0">
+            <p className="max-w-[15rem] text-[10px] uppercase leading-[2] tracking-[0.27em] text-[#d3d2cd]">
               Bold Minimalism. Crafted. Wearable.
             </p>
             <motion.a
-              whileHover={{ x: 6 }}
-              transition={{ duration: 0.6 }}
+              whileHover={{ x: 4 }}
+              transition={{ duration: 0.7 }}
               href="#collection"
-              className="mt-10 inline-block border-t border-[#dfddd8]/40 pt-4 text-[10px] uppercase tracking-[0.3em] text-[#f1f0eb]"
+              className="mt-10 inline-block border-t border-[#e6e4dd]/30 pt-4 text-[9px] uppercase tracking-[0.33em] text-[#f2f0ea]"
             >
               Explore Collection
             </motion.a>
