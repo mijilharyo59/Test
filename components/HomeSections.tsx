@@ -5,23 +5,23 @@ import { motion } from 'framer-motion';
 import { MotionReveal } from './MotionReveal';
 
 const categories = [
-  { name: 'Footwear', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=80' },
-  { name: 'Bags', image: 'https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=1400&q=80' },
-  { name: 'Accessories', image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1400&q=80' },
-  { name: 'Apparel', image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=80' }
+  { name: 'Footwear', image: '/images/hero.jpg' },
+  { name: 'Bags', image: '/images/hero.jpg' },
+  { name: 'Accessories', image: '/images/hero.jpg' },
+  { name: 'Apparel', image: '/images/hero.jpg' }
 ];
 
 const products = [
-  { name: 'Arc Tread Derby', material: 'Crazy Horse Leather', price: '$680', image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1200&q=80' },
-  { name: 'Column Tote', material: 'Nappa Leather', price: '$1,120', image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=80' },
-  { name: 'Lineage Jacket', material: 'Suede', price: '$1,460', image: 'https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1200&q=80' }
+  { name: 'Arc Tread Derby', material: 'Crazy Horse Leather', price: '$680', image: '/images/hero.jpg' },
+  { name: 'Column Tote', material: 'Nappa Leather', price: '$1,120', image: '/images/hero.jpg' },
+  { name: 'Lineage Jacket', material: 'Suede', price: '$1,460', image: '/images/hero.jpg' }
 ];
 
 const materials = [
-  { name: 'Crazy Horse Leather', image: 'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1200&q=80' },
-  { name: 'Nubuck', image: 'https://images.unsplash.com/photo-1463107971871-fbac9ddb920f?auto=format&fit=crop&w=1200&q=80' },
-  { name: 'Suede', image: 'https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80' },
-  { name: 'Nappa Leather', image: 'https://images.unsplash.com/photo-1521223344201-d169129f7b9a?auto=format&fit=crop&w=1200&q=80' }
+  { name: 'Crazy Horse Leather', image: '/images/hero.jpg' },
+  { name: 'Nubuck', image: '/images/hero.jpg' },
+  { name: 'Suede', image: '/images/hero.jpg' },
+  { name: 'Nappa Leather', image: '/images/hero.jpg' }
 ];
 
 export function HomeSections() {
@@ -29,7 +29,7 @@ export function HomeSections() {
     <>
       <section className="relative min-h-screen overflow-hidden bg-[#0d0d0d]">
         <motion.div initial={{ scale: 1.12, y: 8 }} animate={{ scale: 1.03, y: 0 }} transition={{ duration: 3.8, ease: [0.16, 1, 0.3, 1] }} className="editorial-grain absolute inset-0">
-          <Image src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=2200&q=80" alt="Monochrome campaign portrait" fill className="object-cover object-[58%_center] grayscale blur-[0.6px]" priority />
+          <Image src="/images/hero.jpg" alt="Monochrome campaign portrait" fill className="object-cover object-[58%_center] grayscale blur-[0.6px]" priority />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/80" />
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.1)_35%,rgba(0,0,0,0.6)_100%)]" />
@@ -120,7 +120,7 @@ export function HomeSections() {
 
       <section className="relative mx-6 mb-20 mt-10 min-h-[70vh] overflow-hidden md:mx-14 lg:mx-24">
         <motion.div initial={{ scale: 1.03 }} whileInView={{ scale: 1 }} transition={{ duration: 1.8 }} viewport={{ once: true }} className="absolute inset-0 editorial-grain">
-          <Image src="https://images.unsplash.com/photo-1514995669114-6081e934b693?auto=format&fit=crop&w=2200&q=80" alt="Campaign architecture scene" fill className="object-cover grayscale" />
+          <Image src="/images/hero.jpg" alt="Campaign architecture scene" fill className="object-cover grayscale" />
         </motion.div>
         <div className="relative z-10 flex min-h-[70vh] items-end p-8 md:p-14">
           <p className="font-[var(--font-cormorant)] text-4xl text-bone mix-blend-difference md:text-6xl">Crafted for Distinction.</p>
