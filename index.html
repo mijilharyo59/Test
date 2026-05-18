@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JULL STUDIO — Editorial Home</title>
+  <style>
+    :root{--bg:#fff;--ink:#0d0d0d;--muted:#6e6e6e;--line:#d9d9d9}
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
+    .wrap{width:min(1400px,92vw);margin:0 auto}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:8;padding:20px 4vw;display:flex;justify-content:space-between;mix-blend-mode:multiply;background:linear-gradient(#fff,transparent)}
+    .nav .brand{font-size:12px;letter-spacing:.35em}.nav .menu{font-size:11px;letter-spacing:.2em;display:flex;gap:24px}
+    .hero{min-height:100vh;display:grid;align-items:end;padding:14vh 0 8vh;position:relative;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:4vw;align-items:end}
+    .hero h1{font-size:clamp(3rem,11vw,11rem);line-height:.9;letter-spacing:.02em;margin:0 0 20px;font-weight:600;text-transform:uppercase}
+    .hero p{max-width:30ch;font-size:13px;letter-spacing:.08em;line-height:1.8;text-transform:uppercase;color:var(--muted)}
+    .hero-media{height:min(72vh,820px);object-fit:cover;filter:contrast(1.03)}
+    .section{padding:12vh 0;border-top:1px solid var(--line)}
+    .kicker{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+    .categories{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+    .cat{padding-top:2vh}.cat h3{font-size:clamp(1.2rem,3vw,2.6rem);font-weight:500;margin:.3em 0}.cat p{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    .editorial{display:grid;grid-template-columns:.9fr 1.1fr;gap:8vw;align-items:start}
+    blockquote{margin:0;font-size:clamp(1.4rem,3.8vw,4rem);line-height:1.1;text-transform:uppercase;max-width:15ch}
+    .editorial-copy{font-size:14px;line-height:2;letter-spacing:.03em;max-width:55ch}
+    .products{display:grid;grid-template-columns:1fr 1fr;gap:2vw}
+    .card img{aspect-ratio:4/5;object-fit:cover}.card .meta{display:flex;justify-content:space-between;padding-top:12px;font-size:11px;letter-spacing:.15em;text-transform:uppercase}
+    .materials{display:grid;grid-template-columns:1.2fr .8fr;gap:4vw;align-items:center}
+    .materials h2{font-size:clamp(2rem,7vw,6rem);line-height:.92;margin:0;text-transform:uppercase}
+    .campaign{position:relative;min-height:58vh;display:grid;place-items:center;overflow:hidden}
+    .campaign img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+    .campaign .overlay{position:absolute;inset:0;background:rgba(255,255,255,.4)}
+    .campaign h2{position:relative;z-index:2;font-size:clamp(2.5rem,8vw,8rem);letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:0 2rem}
+    footer{padding:8vh 0 5vh;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:2rem;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+    .fade{transition:transform .8s ease,opacity .8s ease}.fade:hover{transform:translateY(-4px);opacity:.95}
+    @media (max-width:900px){.hero-grid,.editorial,.products,.categories,.materials{grid-template-columns:1fr}.nav .menu{display:none}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="brand">JULL STUDIO</div><div class="menu"><a href="#">Collections</a><a href="#">Editorial</a><a href="#">Material</a></div></nav>
+
+  <header class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>Form<br>in Quiet<br>Tension</h1>
+        <p>An editorial homepage study for JULL STUDIO in monochrome interface language with cinematic spatial rhythm.</p>
+      </div>
+      <img class="hero-media fade" src="https://jullstudio.com/cdn/shop/files/JULL_STUDIO_HERO_01.jpg" alt="JULL editorial hero image" />
+    </div>
+  </header>
+
+  <section class="section wrap">
+    <p class="kicker">Featured Categories</p>
+    <div class="categories">
+      <article class="cat"><h3>Tailored Volumes</h3><p>Architectural silhouette studies</p></article>
+      <article class="cat"><h3>Textural Uniforms</h3><p>Quiet material contradiction</p></article>
+      <article class="cat"><h3>Foundational Objects</h3><p>Wardrobe as living sculpture</p></article>
+    </div>
+  </section>
+
+  <section class="section wrap editorial">
+    <blockquote>Luxury is a reduction, not an announcement.</blockquote>
+    <div class="editorial-copy">
+      JULL STUDIO proposes garments as spatial compositions: sharpened lines, softened structure, and a tonal discipline that resists trend velocity.
+      This layout privileges silence, scale, and the cadence of negative space over transactional storefront behavior.
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <p class="kicker">Product Showcase</p>
+    <div class="products">
+      <article class="card fade">
+        <img src="https://jullstudio.com/cdn/shop/files/JULL_STUDIO_LOOK_02.jpg" alt="Look 02" />
+        <div class="meta"><span>Look 02</span><span>Structured Wool</span></div>
+      </article>
+      <article class="card fade" style="margin-top:8vh">
+        <img src="https://jullstudio.com/cdn/shop/files/JULL_STUDIO_LOOK_03.jpg" alt="Look 03" />
+        <div class="meta"><span>Look 03</span><span>Raw Silk Blend</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section wrap materials">
+    <h2>Material<br>Philosophy</h2>
+    <p class="editorial-copy">Natural fibers, weight-balanced weaves, and precision finishing define an anti-excess approach. Every surface is selected for tactility in motion and calm in stillness.</p>
+  </section>
+
+  <section class="section campaign">
+    <img src="https://jullstudio.com/cdn/shop/files/JULL_STUDIO_CAMPAIGN_01.jpg" alt="Campaign banner" />
+    <div class="overlay"></div>
+    <h2>Campaign 26 — Silent Monument</h2>
+  </section>
+
+  <footer class="wrap">
+    <span>JULL STUDIO</span>
+    <span>Paris / Seoul</span>
+    <span>Journal · Contact</span>
+  </footer>
+</body>
+</html>
